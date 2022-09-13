@@ -1,0 +1,5 @@
+This is where all annotations are stored. 
+
+* annotationTable_new.txt : cancer gene annotation
+* enhancerAnnotation.txt : enhancer annotation
+* geneset_with_pathways_merged.txt : pathway annotation
