@@ -1,0 +1,9 @@
+This is where all main figures are created. Figures include: 
+
+* Figure1: stability dendrogram
+* Figure2: autocorrelation
+* Figure3: genomic regions
+* Figure4: meta information
+* Figure5: genome-wide candidates
+* Figure6: frequent genes heatmap
+* Figure7: expresssion
