@@ -79,12 +79,12 @@ methylationSamples <- read.csv(file=paste0(dataDirectory,
 methylationValues <- methylationSamples[,7:43]
 
 
-# use pvclust with 1000 bootstraping repetitions for stability analysis
+# use pvclust with 10000 bootstraping repetitions for stability analysis
 # parallel = T or define parallel = as.integer(numCores) if parallel computing is desired
 # took approx. 25hours in a parallel mode with 50 cores
 
 t1 <- Sys.time()
-valuesManhD2.pv <- pvclust(methylationValues, method.hclust = "ward.D2", method.dist = "manhattan", parallel = as.integer(50), nboot = 1000)
+valuesManhD2.pv <- pvclust(methylationValues, method.hclust = "ward.D2", method.dist = "manhattan", parallel = as.integer(50), nboot = 10000)
 
 print(difftime(Sys.time(), t1) )
 timePassed <- difftime(Sys.time(), t1)
